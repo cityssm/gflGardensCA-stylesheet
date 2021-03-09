@@ -1,0 +1,18 @@
+.infoTable {
+  width: 100%;
+  background-color: $white;
+  border-spacing: 0;
+
+  tbody tr td,
+  tbody tr th {
+    padding: 5px;
+    color: $black;
+    background-color: $white;
+    border-bottom: 1px solid $black;
+  }
+
+  tbody tr:last-child td,
+  tbody tr:last-child th {
+    border: 0;
+  }
+}

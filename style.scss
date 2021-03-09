@@ -1,0 +1,361 @@
+@import 'normalize.css/normalize';
+@import 'utilities/variables';
+@import 'components/row';
+@import 'components/infoTable';
+@import 'template/header';
+@import 'template/nav';
+@import 'template/breadcrumb';
+@import 'template/sectionLinks';
+@import 'template/footer';
+@import 'home/newsSlider';
+@import 'pages/event';
+
+body,
+html {
+  height: 100%;
+}
+
+body.ContentBody {
+  font-family: 'Roboto', Verdana, Arial, sans-serif;
+  font-size: 16px;
+  background: #333 url("/MemorialGardens/media/SiteAssets/img/bg-2560x1700.jpg") no-repeat fixed top center;
+  background-size: cover;
+}
+@media (max-width: 1920px) {
+  body.ContentBody {
+    background-image: url("/MemorialGardens/media/SiteAssets/img/bg-1920x1275.jpg");
+  }
+}
+@media (max-width: 1440px) {
+  body.ContentBody {
+    background-image: url("/MemorialGardens/media/SiteAssets/img/bg-1920x1275.jpg");
+  }
+}
+@media (max-width: 550px) {
+  body.ContentBody {
+    background-image: none;
+  }
+}
+
+a {
+  font-weight: bold;
+  color: $green-gfl-dark;
+
+  &:hover,
+  &:focus {
+    color: $green-gfl-darker;
+  }
+}
+
+
+main {
+  width: 960px;
+  max-width: 100%;
+  padding: 1em;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+#main--page {
+  background-color: $white;
+}
+
+#main--page::after,
+#main--page::before {
+  display: table;
+  content: '';
+}
+
+#main--page::after {
+  clear: both;
+}
+
+#main--page img {
+  max-width: 100%;
+}
+
+h1 {
+  padding-bottom: 4px;
+  border-bottom: 2px solid $green-gfl;
+}
+
+#rightSidePageAd {
+  margin-left: 10%;
+}
+@media (max-width: 720px) {
+  #rightSidePageAd {
+    margin-left: 0;
+  }
+}
+
+#mainContent::after,
+#mainContent::before {
+  display: table;
+  content: '';
+}
+
+#mainContent::after {
+  clear: both;
+}
+
+#mainContent li {
+  margin-bottom: 10px;
+}
+
+#mainContent .faq_link {
+  text-decoration: none;
+}
+
+#mainContent .faq_link:focus,
+#mainContent .faq_link:hover {
+  text-decoration: underline;
+}
+
+#mainContent .accordianBox {
+  display: block;
+  padding: 7px;
+  margin-bottom: 25px;
+  border-radius: 4px;
+  border: 2px solid transparent;
+  box-shadow: 0 0 3px 2px #252525;
+  text-align: center;
+  width: 95%;
+  text-decoration: none;
+}
+
+#mainContent .accordianBox:focus,
+#mainContent .accordianBox:hover {
+  border: 2px solid #333;
+}
+
+
+#row--sliderRow .row__c3 {
+  text-align: right;
+}
+@media (max-width: 720px) {
+  #row--sliderRow .row__c3 {
+    text-align: center;
+  }
+}
+
+#row--sliderRow img {
+  max-width: 100%;
+}
+
+#resizableIframeHome {
+  border: 0;
+  overflow: hidden;
+  border: 2px solid $white;
+  width: 90%;
+  border-radius: 5px;
+  min-height: 300px;
+}
+
+#Iframe_mobileSizeChecker {
+  display: none;
+}
+@media (max-width: 720px) {
+  #Iframe_mobileSizeChecker {
+    display: block;
+  }
+}
+@media (max-width: 720px) {
+  .row__c8.frontSlider {
+    width: 100%;
+    margin: 0;
+    float: none;
+  }
+}
+@media (max-width: 720px) {
+  .row__c4.homeCalendar {
+    width: 100%;
+    margin: 0;
+    float: none;
+  }
+}
+
+#containerRow {
+  width: 100%;
+  text-align: center;
+  margin-top: 3em;
+  margin-bottom: 2em;
+}
+
+#containerRow > div {
+  width: 27%;
+  border: 2px solid white;
+  border-radius: 5px;
+  display: inline-block;
+  vertical-align: top;
+  background-color: #000;
+  color: white;
+  margin: 0 2% 4%;
+}
+
+#containerRow > div h2 {
+  text-transform: uppercase;
+  font-weight: 400;
+  padding: 0 10px;
+}
+
+#containerRow > div p {
+  margin: 0;
+  font-size: 0.9em;
+}
+
+#containerRow > div div {
+  padding-bottom: 1em;
+  font-size: 0.9em;
+}
+
+#containerRow > div a {
+  display: block;
+  margin-bottom: 1em;
+  text-decoration: none;
+  font-size: 1.1em;
+  color: #75992d;
+}
+
+#containerRow > div a:focus,
+#containerRow > div a:hover {
+  color: #607f26;
+}
+
+#containerRow > div p img {
+  width: 100%;
+  display: block;
+  height: 10em;
+  font-size: 1.1em;
+  border-bottom: 2px solid white;
+  border-radius: 5px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+@media (max-width: 550px) {
+  #containerRow > div p img {
+    height: auto;
+    max-height: 15em;
+  }
+}
+
+#containerRow > div p:last-child {
+  margin-bottom: 2em;
+}
+@media (max-width: 820px) {
+  #containerRow > div {
+    width: 30%;
+    margin: 0 1% 4%;
+  }
+}
+@media (max-width: 720px) {
+  #containerRow > div {
+    width: 40%;
+    margin: 0 2% 4%;
+  }
+}
+@media (max-width: 550px) {
+  #containerRow > div {
+    width: 90%;
+    margin: 0 0 10%;
+  }
+}
+
+#containerRow .EditableTextEdit {
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  display: block;
+  margin: 0;
+}
+
+#containerRow .EditableTextEdit > div {
+  padding: 0;
+}
+
+.adBanner {
+  text-align: center;
+}
+
+.adBanner a img {
+  max-width: 100%;
+}
+
+#main--page .Calendar {
+  border: 1px solid #ccc;
+}
+
+#main--page .Calendar table {
+  width: 100%;
+}
+
+#main--page .Calendar th {
+  font-weight: bold;
+  font-size: 1.2em;
+  width: 14%;
+  border-color: #ccc;
+}
+
+#main--page .Calendar td {
+  vertical-align: top;
+  padding: 0.25em;
+  border-color: #ccc;
+  text-align: left;
+}
+
+#main--page .Calendar #eventCal__headerTd {
+  border-width: 0;
+}
+
+#main--page .Calendar #eventCal__headerTd td {
+  font-weight: bold;
+  width: 40px;
+  vertical-align: middle;
+}
+
+#main--page .Calendar #eventCal__headerTd a {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  text-indent: -9999px;
+  color: transparent;
+}
+
+#main--page .Calendar #eventCal__monthTd {
+  text-align: center;
+  width: 100%;
+  font-size: 1.2em;
+}
+
+#main--page .Calendar #eventCal__prevTd a {
+  background-image: url("/EssarCentre/media/EssarCentreAssets/img/calendar-prev-40.png");
+}
+
+#main--page .Calendar #eventCal__nextTd {
+  text-align: right;
+}
+
+#main--page .Calendar #eventCal__nextTd a {
+  background-image: url("/EssarCentre/media/EssarCentreAssets/img/calendar-next-40.png");
+}
+
+
+
+.videoContainer {
+  position: relative;
+  height: 0;
+  max-width: 720px;
+  padding-top: 30px;
+  padding-bottom: 56.25%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.videoContainer embed,
+.videoContainer iframe,
+.videoContainer object {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

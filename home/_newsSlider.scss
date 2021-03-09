@@ -1,0 +1,159 @@
+#frontSlider {
+  position: relative;
+  width: 100%;
+}
+
+.rslides {
+  position: relative;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  list-style: none;
+}
+
+.rslides li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+}
+
+.rslides li a {
+  text-decoration: none;
+}
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+}
+
+.rslides img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 0;
+}
+
+.rslides1_nav {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 99;
+  width: 38px;
+  height: 61px;
+  margin-top: -45px;
+  overflow: hidden;
+  color: #fff;
+  text-decoration: none;
+  text-indent: -9999px;
+  background: transparent url("/MemorialGardens/media/SiteAssets/img/responsiveSlides-themes.gif") no-repeat left top;
+  background-color: #000;
+  opacity: 0.7;
+  -webkit-tap-highlight-color: transparent;
+}
+@media (max-width: 550px) {
+  .rslides1_nav {
+    background-image: url("/MemorialGardens/media/SiteAssets/img/responsiveSlides-themesWhite.gif");
+    opacity: 0.3;
+  }
+}
+
+.rslides1_nav:active {
+  opacity: 1;
+}
+
+.rslides1_nav.next {
+  right: 0;
+  left: auto;
+  background-position: right top;
+}
+
+.rslides1_nav:focus {
+  outline: none;
+}
+
+.rslides_tabs {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.rslides_tabs li {
+  display: inline;
+  float: none;
+  margin-right: 5px;
+}
+
+.rslides_tabs a {
+  text-indent: -9999px;
+  overflow: hidden;
+  border-radius: 15px;
+  background: #fff;
+  display: inline-block;
+  -webkit-box-shadow: inset 0 0 2px 0 rgba(0,0,0,0.3);
+  -moz-box-shadow: inset 0 0 2px 0 rgba(0,0,0,0.3);
+  box-shadow: inset 0 0 2px 0 rgba(0,0,0,0.3);
+  width: 9px;
+  height: 9px;
+}
+
+.rslides_tabs .rslides_here a {
+  background: #75992d;
+}
+
+.frontSlider__caption {
+  padding: 10px;
+  background-color: #000;
+  background-color: rgba(0,0,0,0.9);
+  color: #fff;
+  font-weight: normal;
+  min-height: 2.7em;
+}
+
+.frontSlider__caption::after,
+.frontSlider__caption::before {
+  display: table;
+  content: '';
+}
+
+.frontSlider__caption::after {
+  clear: both;
+}
+@media (max-width: 550px) {
+  .frontSlider__caption {
+    min-height: 0;
+    background-color: rgba(0,0,0,0.7);
+  }
+}
+
+.frontSlider__captionLeft {
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: left;
+}
+@media (max-width: 550px) {
+  .frontSlider__captionLeft {
+    font-size: 1em;
+  }
+}
+
+.frontSlider__captionLeft.singleLine {
+  transform: translateY(50%);
+}
+@media (max-width: 550px) {
+  .frontSlider__captionLeft.singleLine {
+    transform: translateY(0%);
+  }
+}
+
+.frontSlider__captionRight {
+  text-align: left;
+}
+@media (max-width: 550px) {
+  .frontSlider__captionRight {
+    display: none;
+  }
+}

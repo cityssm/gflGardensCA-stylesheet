@@ -1,0 +1,165 @@
+header {
+  background-color: #333;
+  background-color: rgba(51,51,51,0.7);
+}
+
+#headerRow {
+  width: 960px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+#headerRow::after,
+#headerRow::before {
+  display: table;
+  content: '';
+}
+
+#headerRow:after {
+  clear: both;
+}
+
+#headerRow__left {
+  min-height: 1px;
+  position: relative;
+  float: left;
+}
+
+#header__logo {
+  display: inline-block;
+  margin: 10px 0 10px 10px;
+  color: transparent;
+  text-decoration: none;
+}
+
+#headerRow__right {
+  position: relative;
+  float: right;
+  text-align: right;
+  padding-top: 12px;
+  width: 56%;
+}
+
+#headerRow__right select {
+  max-width: 80%;
+  margin: 5px 4px 5px 5px;
+}
+
+#header__links {
+  margin: 8px 0;
+  text-align: right;
+  font-family: 'Roboto Condensed', Verdana, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+#header__links ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+#header__links li {
+  display: inline;
+}
+
+#header__links a {
+  margin: 5px;
+  padding: 3px;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 100ms;
+  display: inline-block;
+}
+
+#header__links img {
+  vertical-align: middle;
+}
+
+#headerLink--twitter:focus,
+#headerLink--twitter:hover {
+  background-color: #55acee;
+}
+
+#headerLink--facebook:focus,
+#headerLink--facebook:hover {
+  background-color: #3864a3;
+}
+
+#headerLink--tickets:focus,
+#headerLink--tickets:hover {
+  background-color: #607f26;
+}
+
+#headerLink--menuToggle {
+  display: none;
+}
+
+#quickEventSelectButton {
+  background: #607f26;
+  border: 1px solid #000000;
+  color: white;
+  padding: 3px 6px;
+  margin-right: 5px;
+}
+
+#quickEventSelectButton:focus,
+#quickEventSelectButton:hover {
+  background-color: #4e661e;
+}
+@media (max-width: 550px) {
+  header {
+    background-color: #333;
+  }
+
+  header.doFix {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+  }
+
+  #header__logo img {
+    height: 40px;
+  }
+
+  #headerRow__right {
+    padding-top: 4px;
+    width: auto;
+  }
+
+  #headerRow__right select {
+    display: none;
+  }
+
+  #quickEventSelectButton {
+    display: none;
+  }
+
+  #header__links {
+    margin: 0;
+  }
+
+  #header__links ul {
+    padding-left: 0;
+  }
+
+  #headerLink--facebook,
+  #headerLink--twitter {
+    display: none !important;
+  }
+
+  #headerLink--menuToggle {
+    display: inline;
+    text-align: right;
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    background: transparent url("/EssarCentre/media/EssarCentreAssets/img/menu-options.png") no-repeat center center;
+    padding: 0;
+  }
+
+  #headerLink--menuToggle img {
+    padding: 5px;
+  }
+}

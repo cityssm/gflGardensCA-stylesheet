@@ -1,0 +1,30 @@
+$event-info-background: #fcfcfc;
+$event-info-shadow: #ddd;
+
+#event:after,
+#event:before {
+  display: table;
+  content: '';
+}
+
+#event:after {
+  clear: both;
+}
+
+#event__image {
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+#event__image img {
+  max-width: 100%;
+}
+
+#event__info {
+  width: 90%;
+  padding: 1em;
+  margin: 0 auto 1em auto;
+  text-align: center;
+  background-color: $event-info-background;
+  box-shadow: 0 0 5px 3px $event-info-shadow;
+}

@@ -1,0 +1,44 @@
+#sectionLinks {
+  padding: 0;
+  margin-top: 0.5em;
+  margin-bottom: 40px;
+  margin-left: 10%;
+  background-color: $green-gfl;
+  border: 2px solid #000;
+  border-radius: 5px;
+}
+
+@media (max-width: 720px) {
+  #sectionLinks {
+    margin-top: 1em;
+    margin-left: 0;
+  }
+}
+
+#sectionLinks h2 {
+  margin: 0;
+  font-size: 1.1em;
+  text-align: center;
+}
+
+#sectionLinks ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+#sectionLinks a {
+  display: block;
+  padding: 0.5em;
+  color: $white;
+  text-decoration: none;
+}
+
+#sectionLinks a:focus,
+#sectionLinks a:hover {
+  background-color: $green-gfl-dark;
+}
+
+#sectionLinks li a {
+  border-top: 1px solid $black;
+}

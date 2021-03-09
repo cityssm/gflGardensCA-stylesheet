@@ -1,0 +1,21 @@
+{
+  "name": "gflgardensca-stylesheet",
+  "version": "1.0.0",
+  "description": "The stylesheet for the GFL Gardens website.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cityssm/gflGardensCA-stylesheet.git"
+  },
+  "author": "The Corporation of the City of Sault Ste. Marie",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cityssm/gflGardensCA-stylesheet/issues"
+  },
+  "homepage": "https://github.com/cityssm/gflGardensCA-stylesheet#readme",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}
