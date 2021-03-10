@@ -47,15 +47,15 @@ header {
 
 #header__links {
   margin: 8px 0;
-  text-align: right;
   font-family: 'Roboto Condensed', Verdana, Arial, sans-serif;
-  font-weight: bold;
   font-size: 1.2em;
+  font-weight: bold;
+  text-align: right;
 }
 
 #header__links ul {
-  list-style-type: none;
   margin: 0;
+  list-style-type: none;
 }
 
 #header__links li {
@@ -63,15 +63,16 @@ header {
 }
 
 #header__links a {
-  margin: 5px;
+  display: inline-block;
   padding: 3px;
-  color: #fff;
+  margin: 5px;
+  color: $white;
   text-decoration: none;
   transition: background-color 100ms;
-  display: inline-block;
 }
 
 #header__links img {
+  height: 30px;
   vertical-align: middle;
 }
 
@@ -95,11 +96,11 @@ header {
 }
 
 #quickEventSelectButton {
-  background: #607f26;
-  border: 1px solid #000000;
-  color: white;
   padding: 3px 6px;
   margin-right: 5px;
+  color: $white;
+  background: #607f26;
+  border: 1px solid #000000;
 }
 
 #quickEventSelectButton:focus,
@@ -123,8 +124,8 @@ header {
   }
 
   #headerRow__right {
-    padding-top: 4px;
     width: auto;
+    padding-top: 4px;
   }
 
   #headerRow__right select {
@@ -150,16 +151,18 @@ header {
 
   #headerLink--menuToggle {
     display: inline;
-    text-align: right;
-    margin: 10px;
     width: 40px;
     height: 40px;
-    border: 0;
-    background: transparent url("/EssarCentre/media/EssarCentreAssets/img/menu-options.png") no-repeat center center;
     padding: 0;
+    margin: 10px;
+    text-align: right;
+    background-color: transparent;
+    border: 0;
   }
 
   #headerLink--menuToggle img {
+    width: 30px;
+    height: 30px;
     padding: 5px;
   }
 }
